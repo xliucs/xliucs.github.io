@@ -1,0 +1,10 @@
+Xin Liu is a PhD student in the Paul G. Allen School of Computer Science &
+Engineering at the University of Washington, Seattle. He is advised by Shwetak Patel
+at UW and Daniel McDuff at Microsoft Research. His research interests lie in
+the intersection of machine learning, sensing, and healthcare. He received a
+bachelor’s degree with honors and Outstanding Undergraduate Achievement Award
+in computer science from the University of Massachusetts Amherst in 2018.
+Xin has published more than 15 peer-reviewed papers on top venues in machine
+learning (NeurIPS, CHIL), mobile and ubiquitous computing (CHI, Ubicomp), and
+biomedical engineering (EMBC, JBHI, Plos). His research has been reported in
+various public media including IEEE Spectrum, ACM TechNews, GeekWire, ZDNet, UW news.
