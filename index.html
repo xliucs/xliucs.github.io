@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
 </head>
 
 <body>
@@ -25,10 +25,10 @@
               <p>Besides my school research, I am also a part-time student researcher at <a href="https://research.google/teams/health/"> Google Health </a> where I am helping ship some mobile health technologies.
               <p>Before joining UW, I obtained my bachelor’s degree in computer science from the <a href="https://cics.umass.edu/"> University of Massachusetts Amherst </a> in 2018, where my advisor was <a href="http://ahhalab.org/"> Sunghoon Ivan Lee </a>.  While at UMass Amherst, I received a 21st Century Leaders Award, Rising Researcher Award, and Outstanding Undergraduate Achievement Award.
               </p>
-              <em> <font color="red"><strong>This website is currently under dvelopment!! Please come back later!</strong></font></em><br>
+              <!-- <em> <font color="red"><strong>This website is currently under dvelopment!! Please come back later!</strong></font></em><br> -->
               <p style="text-align:center">
                 <a href="mailto:xliu0@cs.washington.edu">Email</a> &nbsp/&nbsp
-                <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp
+                <a href="data/Xin_CV_2022.pdf">CV</a> &nbsp/&nbsp
                 <a href="data/XinLiu-bio.txt">Bio</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?hl=en&user=p9F83HoAAAAJ">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://twitter.com/xliucs">Twitter</a> &nbsp/&nbsp
@@ -96,20 +96,321 @@
               <heading>Publication</heading>
               <p>
                 My research interests lie in the intersection of efficient machine learning, sensing and healthcare — bringing machine learning to edge and mobile devices to advance the state-of-the-art healthcare.
-                Currently, my thesis research focuses on enabling accessible, equitable, and useful non-contact camera-based physiological sensing.
+                Currently, my thesis research focuses on enabling accessible, equitable, and useful non-contact camera-based physiological sensing. See a full-list of publication at my <a href="https://scholar.google.com/citations?user=p9F83HoAAAAJ&hl=en&authuser=1/">Google Scholar</a>.
               </p>
             </td>
           </tr>
         </tbody></table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <em> <font color="red"><strong> Not a full list. Under dvelopment!</strong></font></em><br>
+          <!-- <em> <font color="red"><strong> Not a full list. Under dvelopment!</strong></font></em><br> -->
+
+          <!-- fedphys Paper -->
+          <tr onmouseout="style_stop()" onmouseover="style_start()" >
+            <td width="25%">
+              <div class="one">
+              <div class="two" id = 'liu2022federated'><img src='./papers/liu2022federated.png' style='width:120px;height:150px;'></div>
+              <img src='./papers/liu2022federated.png' style='width:158px;height:128px;'>
+              </div>
+              <script type="text/javascript">
+              function style_start() {
+              document.getElementById('papers/liu2022federated.png').style.opacity = "1";
+              }
+              function style_stop() {
+              document.getElementById('papers/liu2022federated.png').style.opacity = "0";
+              }
+              style_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+                  <papertitle> Federated Remote Physiological Measurement with Imperfect Data </papertitle>
+          <br>
+                <strong>Xin Liu</strong>,
+                Mingchuan Zhang,
+                <a href="https://www.linkedin.com/in/jiangzh/">Ziheng Jiang</a>,
+                <a href="http://shwetak.com/">Shwetak Patel</a>,
+                <a href="https://www.microsoft.com/en-us/research/people/damcduff/">Daniel McDuff</a><br>
+                <em>Preprint</em>
+          <br>
+              <a href="https://arxiv.org/pdf/2203.05759.pdf">pdf</a>
+              /
+              <a href="papers/liu2022federated.bib">bibtex</a>
+            </td>
+          </tr>
+
+
+          <!-- future_challenge Paper -->
+          <tr onmouseout="style_stop()" onmouseover="style_start()" >
+            <td width="25%">
+              <div class="one">
+              <div class="two" id = 'liu2021camera'><img src='./papers/liu2021camera.png' style='width:210px;height:128px;'></div>
+              <img src='./papers/liu2021camera.png' style='width:128px;height:108px;'>
+              </div>
+              <script type="text/javascript">
+              function style_start() {
+              document.getElementById('papers/liu2021camera.png').style.opacity = "1";
+              }
+              function style_stop() {
+              document.getElementById('papers/liu2021camera.png').style.opacity = "0";
+              }
+              style_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+                  <papertitle> RGB Camera-Based Physiological Sensing: Challenges and Future Directions </papertitle>
+          <br>
+                <strong>Xin Liu</strong>,
+                <a href="http://shwetak.com/">Shwetak Patel</a>,
+                <a href="https://www.microsoft.com/en-us/research/people/damcduff/">Daniel McDuff</a><br>
+                <em>Preprint</em>
+          <br>
+              <a href="https://arxiv.org/pdf/2110.13362.pdf">pdf</a>
+              /
+              <a href="papers/liu2021camera.bib">bibtex</a>
+            </td>
+          </tr>
+
+
+          <!-- EfficientPhys Paper -->
+          <tr onmouseout="style_stop()" onmouseover="style_start()" >
+            <td width="25%">
+              <div class="one">
+              <div class="two" id = 'liu2021efficientphys'><img src='./papers/liu2021efficientphys.png' style='width:210px;height:100px;'></div>
+              <img src='./papers/liu2021efficientphys.png' style='width:128px;height:108px;'>
+              </div>
+              <script type="text/javascript">
+              function style_start() {
+              document.getElementById('papers/liu2021efficientphys.png').style.opacity = "1";
+              }
+              function style_stop() {
+              document.getElementById('papers/liu2021efficientphys.png').style.opacity = "0";
+              }
+              style_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+                  <papertitle> Efficientphys: Enabling simple, fast and accurate camera-based vitals measurement </papertitle>
+          <br>
+                <strong>Xin Liu</strong>,
+                <a href="https://www.brianlhill.info/">Brian Hill</a>,
+                <a href="https://www.linkedin.com/in/jiangzh/">Ziheng Jiang</a>,
+                <a href="http://shwetak.com/">Shwetak Patel</a>,
+                <a href="https://www.microsoft.com/en-us/research/people/damcduff/">Daniel McDuff</a><br>
+                <em>Preprint</em>
+          <br>
+              <a href="https://arxiv.org/pdf/2110.04447.pdf">pdf</a>
+              /
+              <a href="papers/liu2021efficientphys.bib">bibtex</a>
+            </td>
+          </tr>
+
+          <!-- high_order_rppg Paper -->
+          <tr onmouseout="style_stop()" onmouseover="style_start()" >
+            <td width="25%">
+              <div class="one">
+              <div class="two" id = 'hill2021learning'><img src='./papers/hill2021learning.png' style='width:200px;height:158px;'></div>
+              <img src='./papers/hill2021learning.png' style='width:128px;height:108px;'>
+              </div>
+              <script type="text/javascript">
+              function style_start() {
+              document.getElementById('papers/hill2021learning.png').style.opacity = "1";
+              }
+              function style_stop() {
+              document.getElementById('papers/hill2021learning.png').style.opacity = "0";
+              }
+              style_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+                  <papertitle> Learning Higher-Order Dynamics in Video-Based Cardiac Measurement </papertitle>
+          <br>
+                  <a href="https://www.brianlhill.info/">Brian Hill</a>,
+                  <strong>Xin Liu</strong>,
+                  <a href="https://www.microsoft.com/en-us/research/people/damcduff/">Daniel McDuff</a>,<br>
+                <em>Preprint</em>
+          <br>
+              <a href="https://arxiv.org/pdf/2110.03690.pdf">pdf</a>
+              /
+              <a href="papers/hill2021learning.bib">bibtex</a>
+            </td>
+          </tr>
+
+
+          <!-- AudioSR Paper -->
+          <tr onmouseout="style_stop()" onmouseover="style_start()" >
+            <td width="25%">
+              <div class="one">
+              <div class="two" id = 'li2021enabling'><img src='./papers/li2021enabling.png' style='width:210px;height:128px;'></div>
+              <img src='./papers/li2021enabling.png' style='width:128px;height:108px;'>
+              </div>
+              <script type="text/javascript">
+              function style_start() {
+              document.getElementById('papers/li2021enabling.png').style.opacity = "1";
+              }
+              function style_stop() {
+              document.getElementById('papers/li2021enabling.png').style.opacity = "0";
+              }
+              style_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+                  <papertitle> Enabling Real-time On-chip Audio Super Resolution for Bone Conduction Microphones </papertitle>
+          <br>
+                Yuang Li,
+                <a href="https://pi.cs.tsinghua.edu.cn/lab/people/YuntaoWang/en/">Yuntao Wang</a>,
+                <strong>Xin Liu</strong>,
+                <a href="https://pi.cs.tsinghua.edu.cn/">Yuanchun Shi</a>,
+                <a href="https://www.linkedin.com/in/shao-fu-shih-64058a27/">Shao-Fu Shih</a><br>
+                <em>Preprint</em>
+          <br>
+              <a href="https://arxiv.org/pdf/2112.13156.pdf">pdf</a>
+              /
+              <a href="papers/li2021enabling.bib">bibtex</a>
+            </td>
+          </tr>
+
+          <!-- TBME Synthetic Paper -->
+          <tr onmouseout="style_stop()" onmouseover="style_start()" >
+            <td width="25%">
+              <div class="one">
+              <div class="two" id = 'mcduff2022using'><img src='./papers/mcduff2022using.png' style='width:210px;height:100px;'></div>
+              <img src='./papers/mcduff2022using.png' style='width:128px;height:108px;'>
+              </div>
+              <script type="text/javascript">
+              function style_start() {
+              document.getElementById('papers/mcduff2022using.png').style.opacity = "1";
+              }
+              function style_stop() {
+              document.getElementById('papers/mcduff2022using.png').style.opacity = "0";
+              }
+              style_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+                  <papertitle> Using High-Fidelity Avatars to Advance Camera-based Cardiac Pulse Measurement </papertitle>
+          <br>
+                <a href="https://www.microsoft.com/en-us/research/people/damcduff/">Daniel McDuff</a>,
+                <a href="https://www.microsoft.com/en-us/research/people/javierh/">Javier Hernandez</a>,
+                <strong>Xin Liu</strong>,
+                <a href="https://www.linkedin.com/in/josh-fromm-2a4a2258/">Josh Fromm</a>,
+                <a href="http://errollw.com/">Erroll Wood</a>,
+                <a href="https://www.linkedin.com/in/tadas-baltrusaitis-234b1234/?originalSubdomain=uk/">Tadas Baltrušaitis</a>,<br>
+                <em>IEEE Transactions on Biomedical Engineering (TBME 2022)</em>
+          <br>
+              <a href="https://ieeexplore.ieee.org/abstract/document/9714800">pdf</a>
+              /
+              <a href="papers/mcduff2022using.bib">bibtex</a>
+            </td>
+          </tr>
+
+          <!-- Ubicomp MobilePhys Paper -->
+          <tr onmouseout="style_stop()" onmouseover="style_start()" >
+            <td width="25%">
+              <div class="one">
+              <div class="two" id = 'liu2022mobilephys'><img src='./papers/liu2022mobilephys.png' style='width:210px;height:128px;'></div>
+              <img src='./papers/liu2022mobilephys.png' style='width:128px;height:108px;'>
+              </div>
+              <script type="text/javascript">
+              function style_start() {
+              document.getElementById('papers/liu2022mobilephys.png').style.opacity = "1";
+              }
+              function style_stop() {
+              document.getElementById('papers/liu2022mobilephys.png').style.opacity = "0";
+              }
+              style_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+                  <papertitle> MobilePhys: Personalized Mobile Camera-Based Contactless Physiological Sensing </papertitle>
+          <br>
+                <strong>Xin Liu</strong>,
+                <a href="https://pi.cs.tsinghua.edu.cn/lab/people/YuntaoWang/en/">Yuntao Wang</a>,
+                Sinan Xie,
+                Xiaoyu Zhang,
+                Zixian Ma,
+                <a href="https://www.microsoft.com/en-us/research/people/damcduff/">Daniel McDuff</a>,
+                <a href="http://shwetak.com/">Shwetak Patel</a><br>,
+                <em>Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT/Ubicomp 2022)</em>
+
+          <br>
+              <a href="https://arxiv.org/pdf/2201.04039.pdf">pdf</a>
+              /
+              <a href="papers/liu2022mobilephys.bib">bibtex</a>
+            </td>
+          </tr>
+
+          <!-- CVPRW Beat Paper -->
+          <tr onmouseout="style_stop()" onmouseover="style_start()" >
+            <td width="25%">
+              <div class="one">
+              <div class="two" id = 'hill2021beat'><img src='./papers/hill2021beat.png' style='width:178px;height:158px;'></div>
+              <img src='./papers/hill2021beat.png' style='width:128px;height:108px;'>
+              </div>
+              <script type="text/javascript">
+              function style_start() {
+              document.getElementById('papers/hill2021beat.png').style.opacity = "1";
+              }
+              function style_stop() {
+              document.getElementById('papers/hill2021beat.png').style.opacity = "0";
+              }
+              style_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+                  <papertitle> Beat-to-beat cardiac pulse rate measurement from video </papertitle>
+          <br>
+              <a href="https://www.brianlhill.info/">Brian Hill</a>,
+                <strong>Xin Liu</strong>,
+                <a href="https://www.microsoft.com/en-us/research/people/damcduff/">Daniel McDuff</a>,<br>
+                <em>IEEE/CVF International Conference on Computer Vision Conference (ICCV Vision for Vitals (V4V) Workshop – 2nd Place)</em>
+
+          <br>
+              <a href="https://openaccess.thecvf.com/content/ICCV2021W/V4V/papers/Hill_Beat-To-Beat_Cardiac_Pulse_Rate_Measurement_From_Video_ICCVW_2021_paper.pdf">pdf</a>
+              /
+              <a href="papers/hill2021beat.bib">bibtex</a>
+            </td>
+          </tr>
+
+          <!-- EMBC Synethic Paper -->
+          <tr onmouseout="style_stop()" onmouseover="style_start()" >
+            <td width="25%">
+              <div class="one">
+              <div class="two" id = 'mcduff2021synthetic'><img src='./papers/mcduff2021synthetic.png' style='width:210px;height:128px;'></div>
+              <img src='./papers/mcduff2021synthetic.png' style='width:128px;height:108px;'>
+              </div>
+              <script type="text/javascript">
+              function style_start() {
+              document.getElementById('papers/mcduff2021synthetic.png').style.opacity = "1";
+              }
+              function style_stop() {
+              document.getElementById('papers/mcduff2021synthetic.png').style.opacity = "0";
+              }
+              style_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+                  <papertitle> Synthetic Data for Multi-Parameter Camera-Based Physiological Sensing </papertitle>
+          <br>
+                <a href="https://www.microsoft.com/en-us/research/people/damcduff/">Daniel McDuff</a>,
+                <strong>Xin Liu</strong>,
+                <a href="https://www.microsoft.com/en-us/research/people/javierh/">Javier Hernandez</a>,
+                <a href="https://www.linkedin.com/in/josh-fromm-2a4a2258/">Josh Fromm</a>,
+                <a href="http://errollw.com/">Erroll Wood</a>,
+                <a href="https://www.linkedin.com/in/tadas-baltrusaitis-234b1234/?originalSubdomain=uk/">Tadas Baltrušaitis</a>,<br>
+                <em>IEEE Engineering in Medicine & Biology Society (EMBC 2021)</em>
+
+          <br>
+              <a href="https://ieeexplore.ieee.org/abstract/document/9631031">pdf</a>
+              /
+              <a href="papers/mcduff2021synthetic.bib">bibtex</a>
+            </td>
+          </tr>
 
           <!-- WWW Sleep Paper -->
           <tr onmouseout="style_stop()" onmouseover="style_start()" >
             <td width="25%">
               <div class="one">
-              <div class="two" id = 'park2021online'><img src='./papers/park2021online.png' style='width:158px;height:108px;'></div>
+              <div class="two" id = 'park2021online'><img src='./papers/park2021online.png' style='width:210px;height:128px;'></div>
               <img src='./papers/park2021online.png' style='width:128px;height:108px;'>
               </div>
               <script type="text/javascript">
@@ -145,7 +446,7 @@
           <tr onmouseout="style_stop()" onmouseover="style_start()" >
             <td width="25%">
               <div class="one">
-              <div class="two" id = 'liu2021metaphys'><img src='./papers/liu2021metaphys.png' style='width:181px;height:108px;'></div>
+              <div class="two" id = 'liu2021metaphys'><img src='./papers/liu2021metaphys.png' style='width:210px;height:128px;'></div>
               <img src='./papers/liu2021metaphys.png' style='width:191px;height:108px;'>
               </div>
               <script type="text/javascript">
@@ -166,13 +467,13 @@
                 <a href="https://www.linkedin.com/in/josh-fromm-2a4a2258/">Josh Fromm</a>,
                 <a href="https://orsonxu.com/">Xuhai Xu</a>,
                 <a href="http://shwetak.com/">Shwetak Patel</a>,
-                <a href="https://www.microsoft.com/en-us/research/people/damcduff/">Daniel McDuff</a>,<br>
+                <a href="https://www.microsoft.com/en-us/research/people/damcduff/">Daniel McDuff</a><br>
                 <em>ACM Conference on Health, Inference, and Learning (ACM-CHIL 2021)</em><br>
-                Selected Media:
+                <font color="green"><strong>Selected Media:
                 <a href="https://spectrum.ieee.org/smartphone-camera-senses-patients-pulse-breathing-rate/">IEEE Spectrum </a>,
                 <a href="https://technews.acm.org/archives.cfm?fo=2021-04-apr/apr-02-2021.html/">ACM TechNews </a>,
                 <a href="https://www.geekwire.com/2021/researchers-develop-health-tech-tool-can-detect-vital-signs-persons-face-via-video/">GeekWire </a>,
-                <a href="https://www.washington.edu/news/2021/04/01/smartphone-computer-cameras-measure-pulse-respiration-rate-telehealth/">UW News</a>,
+                <a href="https://www.washington.edu/news/2021/04/01/smartphone-computer-cameras-measure-pulse-respiration-rate-telehealth/">UW News</a>
           <br>
               <a href="https://dl.acm.org/doi/pdf/10.1145/3450439.3451870">pdf</a>
               /
@@ -184,7 +485,7 @@
           <tr onmouseout="style_stop()" onmouseover="style_start()" >
             <td width="25%">
               <div class="one">
-              <div class="two" id = 'liu2021splitsr'><img src='./papers/liu2021splitsr.png' style='width:198px;height:108px;'></div>
+              <div class="two" id = 'liu2021splitsr'><img src='./papers/liu2021splitsr.png' style='width:210px;height:128px;'></div>
               <img src='./papers/liu2021splitsr.png' style='width:191px;height:108px;'>
               </div>
               <script type="text/javascript">
@@ -257,7 +558,7 @@
           <tr onmouseout="style_stop()" onmouseover="style_start()" >
             <td width="25%">
               <div class="one">
-              <div class="two" id = 'mcduff2020advancing'><img src='./papers/mcduff2020advancing.png' style='width:171px;height:108px;'></div>
+              <div class="two" id = 'mcduff2020advancing'><img src='./papers/mcduff2020advancing.png' style='width:210px;height:128px;'></div>
               <img src='./papers/mcduff2020advancing.png' style='width:191px;height:108px;'>
               </div>
               <script type="text/javascript">
@@ -279,7 +580,7 @@
                 <a href="https://www.linkedin.com/in/josh-fromm-2a4a2258/">Josh Fromm</a>,
                 <a href="http://errollw.com/">Erroll Wood</a>,
                 <a href="https://www.linkedin.com/in/tadas-baltrusaitis-234b1234/?originalSubdomain=uk/">Tadas Baltrušaitis</a>,<br>
-                <em>Arxiv</em>
+                <em>Preprint</em>
           <br>
               <a href="https://arxiv.org/pdf/2010.12949.pdf">pdf</a>
               /
@@ -291,7 +592,7 @@
           <tr onmouseout="style_stop()" onmouseover="style_start()" >
             <td width="25%">
               <div class="one">
-              <div class="two" id = 'liu2020multi'><img src='./papers/liu2020multi.png' style='width:181px;height:108px;'></div>
+              <div class="two" id = 'liu2020multi'><img src='./papers/liu2020multi.png' style='width:210px;height:128px;'></div>
               <img src='./papers/liu2020multi.png' style='width:191px;height:108px;'>
               </div>
               <script type="text/javascript">
@@ -313,7 +614,7 @@
                 <a href="https://www.microsoft.com/en-us/research/people/damcduff/">Daniel McDuff</a><br>
                 <em>Conference on Neural Information Processing Systems (NeurIPS' 20)</em><br>
                 <em> <font color="red"><strong>Oral, Top 1%, 105 out of 9454 Submissions</strong></font></em><br>
-                Selected Media: <a href="https://note.microsoft.com/MSR-Webinar-Health-Sensing-Registration-On-Demand.html/">Microsoft Research Webinar</a>,
+                <font color="green"><strong>Selected Media: <a href="https://note.microsoft.com/MSR-Webinar-Health-Sensing-Registration-On-Demand.html/">Microsoft Research Webinar</a>,
                 <a href="https://www.microsoft.com/en-us/research/blog/utilizing-consumer-cameras-for-contact-free-physiological-measurement-in-telehealth-and-beyond/">Microsoft Research Blog</a>,
                 <a href="https://www.zdnet.com/article/microsoft-heres-how-your-smartphone-camera-plus-ai-can-keep-an-eye-on-your-health/#ftag=RSSbaffb68/">ZDNet</a>
 
@@ -329,7 +630,7 @@
           <tr onmouseout="style_stop()" onmouseover="style_start()" >
             <td width="25%">
               <div class="one">
-              <div class="two" id = 'lee2019novel'><img src='./papers/lee2019novel.png' style='width:191px;height:108px;'></div>
+              <div class="two" id = 'lee2019novel'><img src='./papers/lee2019novel.png' style='width:210px;height:128px;'></div>
               <img src='./papers/lee2019novel.png' style='width:161px;height:108px;'>
               </div>
               <script type="text/javascript">
@@ -363,7 +664,7 @@
           <tr onmouseout="style_stop()" onmouseover="style_start()" >
             <td width="25%">
               <div class="one">
-              <div class="two" id = 'liu2018use'><img src='./papers/liu2018use.png' style='width:151px;height:108px;'></div>
+              <div class="two" id = 'liu2018use'><img src='./papers/liu2018use.png' style='width:210px;height:128px;'></div>
               <img src='./papers/liu2018use.png' style='width:161px;height:108px;'>
               </div>
               <script type="text/javascript">
@@ -397,7 +698,7 @@
           <tr onmouseout="style_stop()" onmouseover="style_start()" >
             <td width="25%">
               <div class="one">
-              <div class="two" id = 'respirenet_image'><img src='./papers/liu2018finger.png' style='width:191px;height:108px;'></div>
+              <div class="two" id = 'respirenet_image'><img src='./papers/liu2018finger.png' style='width:210px;height:128px;'></div>
               <img src='./papers/liu2018finger.png' style='width:161px;height:108px;'>
               </div>
               <script type="text/javascript">
