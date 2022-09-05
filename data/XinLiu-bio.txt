@@ -1,8 +1,8 @@
 Xin Liu is a 4th-year PhD candidate in the Paul G. Allen School of Computer Science &
-Engineering at the University of Washington, Seattle. He is advised by Shwetak Patel
-at UW and Daniel McDuff at Microsoft Research. His research interests lie in
-the intersection of machine learning, sensing, and health. He received a
-bachelor’s degree in computer science with honors and Outstanding Undergraduate
+Engineering at the University of Washington, Seattle and a Google PhD Fellow, where
+he is advised by Shwetak Patel and Daniel McDuff. His research interests lie in
+the intersection of machine learning, sensing, and health. He received a bachelor’s
+degree in computer science with honors and Outstanding Undergraduate
 Achievement Award from the University of Massachusetts Amherst in 2018. He has
 published more than 15 peer-reviewed papers on top venues in machine learning
 (NeurIPS, CHIL), mobile and ubiquitous computing (CHI, Ubicomp), and biomedical
