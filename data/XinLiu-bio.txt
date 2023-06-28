@@ -1,13 +1,11 @@
-Xin Liu is a 4th-year PhD candidate in the Paul G. Allen School of Computer Science &
-Engineering at the University of Washington, Seattle and a Google PhD Fellow, where
-he is advised by Shwetak Patel and Daniel McDuff. His research interests lie in
-the intersection of machine learning, sensing, and health. He received a bachelor’s
-degree in computer science with honors and Outstanding Undergraduate
+Xin Liu is a Research Scientist at Google Consumer Health Research. He received his 
+PhD in Computer Science from the Paul G. Allen School of Computer Science & Engineering 
+at the University of Washington, Seattle and was supported by Google PhD Fellowship. 
+His research interests lie in the intersection of machine learning, ubiqutous computing, and health. 
+He received a bachelor’s degree in computer science with honors and Outstanding Undergraduate
 Achievement Award from the University of Massachusetts Amherst in 2018. He has
-published more than 15 peer-reviewed papers on top venues in machine learning
-(NeurIPS, CHIL), mobile and ubiquitous computing (CHI, Ubicomp), and biomedical
+published more than 20 peer-reviewed papers on top venues in machine learning
+(NeurIPS, ICLR, WACV, CHIL), mobile and ubiquitous computing (CHI, Ubicomp), and biomedical
 engineering (TBME, JBHI, EMBC, PLOS). His research have been featured as an oral
-presentation at NeurIPS and on various public media including IEEE  Spectrum, ACM
-TechNews, GeekWire, ZDNet, UW news. During his PhD, he also has spent significant
-amount of time at industry research labs including Microsoft, Google, OctOML,
-and Allen Institute for AI.
+presentation at NeurIPS and ICLR and on various public media including IEEE  Spectrum, ACM
+TechNews, GeekWire, ZDNet, UW news. 
