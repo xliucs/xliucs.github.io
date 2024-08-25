@@ -25,7 +25,7 @@
               <p>Before joining UW, he obtained his bachelor’s degree in computer science from the <a href="https://cics.umass.edu/" target="_blank"> University of Massachusetts Amherst </a> in 2018, where he started his mobile health research journey with <a href="http://ahhalab.org/" target="_blank"> Sunghoon Ivan Lee </a>.
               </p>
 		<p> His work is at the intersection of ubiquitous and mobile computing, machine learning, and health. In Xin's research, he studies how to enable mobile health + AI at scale, with a focus on building foundation models for sensor and consumer health data. </p>
-		    
+
               <!-- <em> <font color="red"><strong>This website is currently under dvelopment!! Please come back later!</strong></font></em><br> -->
               <p style="text-align:center">
                 <a href="mailto:xliu0@cs.washington.edu">Email</a> &nbsp/&nbsp
@@ -105,7 +105,8 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Selected Publication</heading>
               <p>
- See a full-list of publication at my <a href="https://scholar.google.com/citations?user=p9F83HoAAAAJ&hl=en&authuser=1/" target="_blank">Google Scholar</a>. I publish papers under UW / Google. 
+ See a full-list of publication at my <a href="https://scholar.google.com/citations?user=p9F83HoAAAAJ&hl=en&authuser=1/" target="_blank">Google Scholar</a>. I publish papers under UW / Google.
+ <br><u>Underscore</u> denotes students/interns I mentored.</br>
               </p>
             </td>
           </tr>
@@ -114,39 +115,99 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <!-- <em> <font color="red"><strong> Not a full list. Under dvelopment!</strong></font></em><br> -->
 
+          <!-- Probabilistic Reasoning  Paper -->
+          <tr onmouseout="style_stop()" onmouseover="style_start()" >
+            <td width="25%">
+              <div class="one">
+              <div class="two" id = 'paruchuri2024odds'><img src='./papers/paruchuri2024odds.png' style='width:180px;height:100px;'></div>
+              <img src='./papers/paruchuri2024odds.png' style='width:128px;height:108px;'>
+              </div>
+              <script type="text/javascript">
+              function style_start() {
+              document.getElementById('papers/paruchuri2024odds.png').style.opacity = "1";
+              }
+              function style_stop() {
+              document.getElementById('papers/paruchuri2024odds.png').style.opacity = "0";
+              }
+              style_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+            <papertitle> What Are the Odds? Language Models Are Capable of Probabilistic Reasoning </papertitle>
+          <br>
+          <u>Akshay Paruchuri</u>, Jake Garrison, Shun Liao, John Hernandez, Jacob Sunshine, Tim Althoff, <strong>Xin Liu</strong>, Daniel McDuff
 
-	<!-- WACV Motion Paper -->
-	<tr onmouseout="style_stop()" onmouseover="style_start()" >
-	  <td width="25%">
-	    <div class="one">
-	    <div class="two" id = 'paruchuri2023motion'><img src='./papers/paruchuri2023motion.png' style='width:210px;height:100px;'></div>
-	    <img src='./papers/paruchuri2023motion.png' style='width:128px;height:108px;'>
-	    </div>
-	    <script type="text/javascript">
-	    function style_start() {
-	    document.getElementById('papers/paruchuri2023motion.png').style.opacity = "1";
-	    }
-	    function style_stop() {
-	    document.getElementById('papers/paruchuri2023motion.png').style.opacity = "0";
-	    }
-	    style_stop()
-	    </script>
-	  </td>
-	  <td valign="top" width="75%">
-		<papertitle> Motion Matters: Neural Motion Transfer for Better Camera Physiological Measurement </papertitle>
-	<br>
-	Akshay Paruchuri, <strong>Xin Liu</strong>, Yulu Pan, Shwetak Patel, Daniel McDuff, Soumyadip Sengupta
-	 <br>
-	      <em>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2024)</em>
-	      <br><em> <font color="red"><strong>Oral, Top 53 out of 2042 Submissions (Top 2.6%) </strong></font></em>
-	      <br>
-	<br>
-	    <a href="https://arxiv.org/abs/2303.12059" target="_blank">pdf</a>
-	    /
-	    <a href="papers/paruchuri2023motion.bib">bibtex</a>
-	  </td>
-	</tr>
+           <br>
+          <br>
+              <a href="https://arxiv.org/pdf/2406.12830" target="_blank">pdf</a>
+              /
+              <a href="papers/paruchuri2024odds.bib">bibtex</a>
+            </td>
+          </tr>
 
+          <!-- PHLLM  Paper -->
+          <tr onmouseout="style_stop()" onmouseover="style_start()" >
+            <td width="25%">
+              <div class="one">
+              <div class="two" id = 'cosentino2024towards'><img src='./papers/cosentino2024towards.png' style='width:180px;height:100px;'></div>
+              <img src='./papers/cosentino2024towards.png' style='width:128px;height:108px;'>
+              </div>
+              <script type="text/javascript">
+              function style_start() {
+              document.getElementById('papers/cosentino2024towards.png').style.opacity = "1";
+              }
+              function style_stop() {
+              document.getElementById('papers/cosentino2024towards.png').style.opacity = "0";
+              }
+              style_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+            <papertitle> Towards a Personal Health Large Language Model </papertitle>
+          <br>
+          Justin Cosentino<strong>*</strong>, Anastasiya Belyaeva<strong>*‡</strong>, <strong>Xin Liu*‡</strong>, Nicholas A. Furlotte<strong>*</strong>, Zhun Yang, Chace Lee, Erik Schenck, Yojan Patel, Jian Cui, Logan Douglas Schneider, Robby Bryant, Ryan G. Gomes, Allen Jiang, Roy Lee, Yun Liu, Javier Perez, Jameson K. Rogers, Cathy Speed, Shyam Tailor, Megan Walker, Jeffrey Yu, Tim Althoff, Conor Heneghan, John Hernandez, Mark Malhotra, Leor Stern, Yossi Matias, Greg S. Corrado, Shwetak Patel, Shravya Shetty, Jiening Zhan, Shruthi Prabhakara, Daniel McDuff<strong>$‡</strong>, Cory Y. McLean<strong>$‡</strong>
+           <br>
+          <br> <font color="black"><strong>* = co-first author, $ = equal advising, ‡ = corresponding author </strong></font><br>
+
+          <br>
+              <a href="https://arxiv.org/pdf/2406.06474" target="_blank">pdf</a>
+              /
+              <a href="papers/cosentino2024towards.bib">bibtex</a>
+              /
+              <a href="https://research.google/blog/advancing-personal-health-and-wellness-insights-with-ai/" target="_blank">Google Research Blog</a>
+            </td>
+          </tr>
+
+          <!-- PHIA  Paper -->
+          <tr onmouseout="style_stop()" onmouseover="style_start()" >
+            <td width="25%">
+              <div class="one">
+              <div class="two" id = 'merrill2024transforming'><img src='./papers/merrill2024transforming.png' style='width:210px;height:100px;'></div>
+              <img src='./papers/merrill2024transforming.png' style='width:128px;height:108px;'>
+              </div>
+              <script type="text/javascript">
+              function style_start() {
+              document.getElementById('papers/merrill2024transforming.png').style.opacity = "1";
+              }
+              function style_stop() {
+              document.getElementById('papers/merrill2024transforming.png').style.opacity = "0";
+              }
+              style_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+            <papertitle> Transforming Wearable Data into Health Insights using Large Language Model Agents </papertitle>
+          <br>
+          <u>Mike A. Merrill</u>, Akshay Paruchuri, Naghmeh Rezaei, Geza Kovacs, Javier Perez, Yun Liu, Erik Schenck, Nova Hammerquist, Jake Sunshine, Shyam Tailor, Kumar Ayush, Hao-Wei Su, Qian He, Cory Y. McLean, Mark Malhotra, Shwetak Patel, Jiening Zhan, Tim Althoff, Daniel McDuff, <strong>Xin Liu</strong>
+           <br>
+          <br>
+              <a href="https://arxiv.org/pdf/2406.06464" target="_blank">pdf</a>
+              /
+              <a href="papers/merrill2024transforming.bib">bibtex</a>
+              /
+              <a href="https://research.google/blog/advancing-personal-health-and-wellness-insights-with-ai/" target="_blank">Google Research Blog</a>
+            </td>
+          </tr>
 
           <!-- rPPG Toolbox Paper -->
           <tr onmouseout="style_stop()" onmouseover="style_start()" >
@@ -234,6 +295,8 @@
               <a href="https://arxiv.org/pdf/2210.03115.pdf" target="_blank">pdf</a>
               /
               <a href="papers/yang2022simper.bib">bibtex</a>
+              /
+              <a href="https://research.google/blog/simper-simple-self-supervised-learning-of-periodic-targets/" target="_blank">Google Research Blog</a>
             </td>
           </tr>
 
