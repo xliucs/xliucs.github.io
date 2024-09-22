@@ -1,11 +1,8 @@
-Xin Liu is a Research Scientist at Google Consumer Health Research. He received his 
-PhD in Computer Science from the Paul G. Allen School of Computer Science & Engineering 
-at the University of Washington, Seattle and was supported by Google PhD Fellowship. 
-His research interests lie in the intersection of machine learning, ubiqutous computing, and health. 
-He received a bachelor’s degree in computer science with honors and Outstanding Undergraduate
-Achievement Award from the University of Massachusetts Amherst in 2018. He has
-published more than 20 peer-reviewed papers on top venues in machine learning
-(NeurIPS, ICLR, WACV, CHIL), mobile and ubiquitous computing (CHI, Ubicomp), and biomedical
-engineering (TBME, JBHI, EMBC, PLOS). His research have been featured as an oral
-presentation at NeurIPS and ICLR and on various public media including IEEE  Spectrum, ACM
-TechNews, GeekWire, ZDNet, UW news. 
+Xin Liu is a Research Scientist at Google Consumer Health Research, focusing on the intersection of machine learning, 
+ubiquitous computing, and health. He has authored over 30 peer-reviewed papers in top venues across machine learning (NeurIPS, ICLR), 
+mobile and ubiquitous computing (CHI, Ubicomp), and biomedical engineering (TBME, JBHI). His work has been recognized 
+with the Google PhD Fellowship and the Best Paper Award at Ubicomp 2023. His research has also been featured in 4x oral 
+presentations at NeurIPS, ICLR, and WACV and covered by media outlets such as IEEE Spectrum, ACM TechNews, 
+GeekWire, ZDNet, and UW News. His PhD research in camera-based contactless health sensing has been widely adopted by 
+Google and startup industries. He received his  PhD in Computer Science from the University of Washington Seattle 
+in 2023 and bachelor’s with highest honors from the University of Massachusetts Amherst in 2018.
