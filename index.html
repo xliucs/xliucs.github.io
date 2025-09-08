@@ -1,13 +1,88 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Selected Publications</title>
+  <style>
+    :root {
+      --darkblue: #0b3d91;
+      --accent-red: #c62828;
+      --title-blue: #1a73e8; /* elegant highlight for paper titles */
+      --ink: #111827;
+      --muted: #4b5563;
+      --card: #ffffff;
+      --bg: #f8fafc;
+      --border: #e5e7eb;
+    }
 
-  <title>Xin Liu</title>
+    a {
+      color: #42A5F5;   /* light blue */
+      text-decoration: none;
+    }
 
-  <meta name="author" content="Xin Liu">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    a:hover {
+      text-decoration: underline; /* optional: only underline on hover */
+    }
+    name {
+      font-size: 2rem;   /* bigger */
+      font-weight: bold; /* bold */
+      color: #000000;    /* black */
+    }
+    html, body {
+      margin: 0; padding: 0; background: var(--bg); color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial;
+      line-height: 1.45;
+    }
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+    .container { max-width: 1000px; margin: 2.5rem auto; padding: 0 1rem; }
+
+    h1 { font-size: 1.875rem; margin: 0 0 1rem; }
+
+    .subtitle { color: var(--muted); margin-bottom: 1.5rem; }
+
+    .section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.25rem 1.25rem 0.5rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 2px rgba(17,24,39,0.04);
+    }
+
+    .section-header { border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-bottom: 0.75rem; }
+
+    .section-title { font-size: 1.1rem; font-weight: 700; text-decoration: underline; }
+
+    .publist { list-style: none; padding: 0; margin: 0; }
+
+    .pub { display: grid; grid-template-columns: auto 1fr; gap: 0.5rem 0.75rem; padding: 0.75rem 0; border-bottom: 1px dashed var(--border); }
+    .pub:last-child { border-bottom: 0; }
+
+    .idx { font-weight: 700; color: var(--muted); min-width: 2.5rem; text-align: right; }
+
+    .entry { min-width: 0; }
+
+    .authors { font-size: 0.97rem; }
+
+    .title { display: block; font-weight: 700; color: var(--title-blue); margin: 0.2rem 0 0.3rem; }
+
+    .venue { font-style: italic; color: var(--darkblue); font-weight: 700; }
+
+    .links { margin-top: 0.3rem; }
+    /* .links a { margin-right: 0.6rem; color: var(--darkblue); text-decoration: none; font-weight: 600; }
+    .links a:hover { text-decoration: underline; } */
+    .links a {
+      margin-right: 0.6rem; /* space between links */
+    }
+    .notes { margin-top: 0.35rem; }
+    .note { display: inline-block; color: var(--accent-red); font-weight: 800; font-size: 0.92rem; margin-right: 0.5rem; }
+
+    @media (max-width: 640px) {
+      .pub { grid-template-columns: 2.25rem 1fr; }
+      .idx { min-width: 2.25rem; }
+    }
+  </style>
 </head>
 
 <body>
@@ -20,11 +95,11 @@
               <p style="text-align:center">
                 <name>Xin Liu</name>
               </p>
-              <p>Xin Liu is a Research Scientist at Google Consumer Health Research and a research affliate in the <a href="https://www.cs.washington.edu" target="_blank"> Paul G. Allen School of Computer Science & Engineering</a> at the University of Washington. He received his PhD in Computer Science from the <a href="https://www.cs.washington.edu" target="_blank">University of Washington</a> in 2023, where he was advised by <a href="https://ubicomplab.cs.washington.edu/members/" target="_blank"> Shwetak Patel</a> and <a href="https://scholar.google.com/citations?user=m7Jr-b4AAAAJ&hl=en" target="_blank"> Daniel McDuff</a>. His PhD research was supported by the <a href="https://news.cs.washington.edu/2022/10/24/a-picture-of-health-google-fellowship-recipient-xin-liu-combines-machine-learning-and-mobile-sensing-through-an-equity-lens-to-support-remote-health-assessment/" target="_blank"> Google PhD Fellowship </a>.
+              <p>Xin Liu is a Senior Research Scientist at Google Research. He received his PhD in Computer Science from the <a href="https://www.cs.washington.edu" target="_blank">University of Washington</a> in 2023, where he was advised by <a href="https://ubicomplab.cs.washington.edu/members/" target="_blank"> Shwetak Patel</a> and <a href="https://scholar.google.com/citations?user=m7Jr-b4AAAAJ&hl=en" target="_blank"> Daniel McDuff</a>. His PhD research was supported by the <a href="https://news.cs.washington.edu/2022/10/24/a-picture-of-health-google-fellowship-recipient-xin-liu-combines-machine-learning-and-mobile-sensing-through-an-equity-lens-to-support-remote-health-assessment/" target="_blank"> Google PhD Fellowship </a>.
               </p>
-              <p>Before joining UW, he obtained his bachelor’s degree in computer science from the <a href="https://cics.umass.edu/" target="_blank"> University of Massachusetts Amherst </a> in 2018, where he started his mobile health research journey with <a href="http://ahhalab.org/" target="_blank"> Sunghoon Ivan Lee </a>.
+              <p>Before joining UW, he obtained his bachelor’s degree in computer science from the <a href="https://cics.umass.edu/" target="_blank"> University of Massachusetts Amherst </a> in 2018, where he started his research with <a href="http://ahhalab.org/" target="_blank"> Sunghoon Ivan Lee </a>.
               </p>
-		<p> His work is at the intersection of ubiquitous and mobile computing, machine learning, and health. In Xin's research, he studies how to enable mobile health + AI at scale, with a focus on building foundation models for sensor and consumer health data. </p>
+		<p> His work is at the intersection of AI for health and science, LLM reasoning, and machine learning. He is interested in building a unified AGI system that benefits humanity. </p>
 
               <!-- <em> <font color="red"><strong>This website is currently under dvelopment!! Please come back later!</strong></font></em><br> -->
               <p style="text-align:center">
@@ -44,582 +119,215 @@
           </tr>
         </tbody></table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Selected Publications</heading>
-              <p>
- This list might be out-of-date. See a full-list of publication at my <a href="https://scholar.google.com/citations?user=p9F83HoAAAAJ&hl=en&authuser=1/" target="_blank">Google Scholar</a>. I publish papers under UW / Google.
- <br><br><u>Underscore</u> denotes students/interns I mentored.</br></br>
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
+        <body>
+          <main class="container">
+            <h1>Selected Publications</h1>
+            <div class="subtitle">Venues in <span class="venue">dark blue</span>; paper titles in <span style="color: var(--title-blue); font-weight: 600;">blue</span>; roles/remarks in <span class="note">red</span>.</div>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <!-- <em> <font color="red"><strong> Not a full list. Under dvelopment!</strong></font></em><br> -->
+            <!-- ======================= AI for Health ======================= -->
+            <section class="section" id="ai-for-health">
+              <div class="section-header"><div class="section-title">AI for Health</div></div>
+              <ol class="publist">
+                <li class="pub">
+                  <div class="idx">[5]</div>
+                  <div class="entry">
+                    <div class="authors">A. Ali Heydari#, Ken Gu#, Vidya Srinivas#, Hong Yu#, Zhihan Zhang, Yuwei Zhang, Akshay Paruchuri, Qian He, Hamid Palangi, Nova Hammerquist, Ahmed A. Metwally, Brent Winslow, Yubin Kim, Kumar Ayush, Yuzhe Yang, Girish Narayanswamy, Maxwell A. Xu, Jake Garrison, Amy Aremnto Lee, Jenny Vafeiadou, Ben Graef, Isaac R. Galatzer-Levy, Erik Schenck, Andrew Barakat, Javier Perez, Jacqueline Shreibati, John Hernandez, Anthony Z. Faranesh, Javier L. Prieto, Connor Heneghan, Yun Liu, Jiening Zhan, Mark Malhotra, Shwetak Patel, Tim Althoff, <strong>Xin Liu$</strong>, Daniel McDuff$, Xuhai Xu$</div>
+                    <div class="title">The Anatomy of a Personal Health Agent</div>
+                    <div class="venue">Preprint, 2025</div>
+                    <div class="links">
+                      <a href="https://arxiv.org/abs/2508.20148">Paper</a><a href="#">Code</a><a href="#">Blog</a>
+                    </div>
+                    <div class="notes"><span class="note">$ Equal Leadership, Corresponding Author</span><span class="note"># Equal Contribution</span></div>
+                  </div>
+                </li>
+                <li class="pub">
+                  <div class="idx">[4]</div>
+                  <div class="entry">
+                    <div class="authors">Justin Khasentino#, Anastasiya Belyaeva#$, <strong>Xin Liu #$</strong>, Zhun Yang#, Nicholas A. Furlotte#, Chace Lee, Erik Schenck, Yojan Patel, Jian Cui, Logan Douglas Schneider, Robby Bryant, Ryan G. Gomes, Allen Jiang, Roy Lee, Yun Liu, Javier Perez, Jameson K. Rogers, Cathy Speed, Shyam Tailor, Megan Walker, Jeffrey Yu, Tim Althoff, Conor Heneghan, John Hernandez, Mark Malhotra, Leor Stern, Yossi Matias, Greg S. Corrado, Shwetak Patel, Shravya Shetty, Jiening Zhan, Shruthi Prabhakara, Daniel McDuff$, Cory Y. McLean$</div>
+                    <div class="title">A Personal Health Large Language Model for Sleep and Fitness Coaching</div>
+                    <div class="venue">Nature Medicine, 2025</div>
+                    <div class="links">
+                      <a href="https://www.nature.com/articles/s41591-025-03888-0">Paper</a><a href="https://github.com/Google-Health/consumer-health-research/tree/main/phllm">Code</a><a href="https://research.google/blog/advancing-personal-health-and-wellness-insights-with-ai/">Blog</a>
+                    </div>
+                    <div class="notes"><span class="note"># Equal Contribution</span><span class="note">$ Corresponding Author</span></div>
+                  </div>
+                </li>
+                <li class="pub">
+                  <div class="idx">[3]</div>
+                  <div class="entry">
+                    <div class="authors">Mike A. Merrill #, Akshay Paruchuri #, Naghmeh Rezaei, Geza Kovacs, Javier Perez, Yun Liu, Erik Schenck, Nova Hammerquist, Jake Sunshine, Shyam Tailor, Kumar Ayush, Hao-Wei Su, Qian He, Cory Y. McLean, Mark Malhotra, Shwetak Patel, Jiening Zhan, Tim Althoff $, Daniel McDuff $, <strong>Xin Liu $</strong></div>
+                    <div class="title">Transforming Wearable Data into Health Insights Using Large Language Model Agents</div>
+                    <div class="venue">Nature Communications (Conditionally accepted), 2025</div>
+                    <div class="links">
+                      <a href="https://arxiv.org/abs/2406.06464">Paper</a><a href="https://github.com/yahskapar/personal-health-insights-agent">Code</a><a href="https://research.google/blog/advancing-personal-health-and-wellness-insights-with-ai/">Blog</a>
+                    </div>
+                    <div class="notes"><span class="note">$ Equal Leadership, Corresponding Author</span><span class="note"># Equal Contribution, Primary host of the first authors.</span><span class="note">Used in Google Products.</span></div>
+                  </div>
+                </li>
+                <li class="pub">
+                  <div class="idx">[2]</div>
+                  <div class="entry">
+                    <div class="authors">Shun Liao #, Paolo Di Achille #, Jiang Wu #, Silviu Borac #, Jonathan Wang #, <strong>Xin Liu #</strong>, Eric Teasley #, Lawrence Cai, Yun Liu, Daniel McDuff, Hao-Wei Su, Brent Winslow, Anupam Pathak, Shwetak Patel, Jameson K. Rogers, Ming-Zher Poh</div>
+                    <div class="title">Passive Heart Rate Monitoring During Smartphone Use in Everyday Life</div>
+                    <div class="venue">Under Major Revision at Nature, 2025</div>
+                    <div class="links">
+                      <a href="https://arxiv.org/abs/2503.03783">Paper</a>
+                    </div>
+                    <div class="notes"><span class="note"># Equal Contribution. Based on my PhD research. Google Product.</span></div>
+                  </div>
+                </li>
 
-          <!-- Probabilistic Reasoning  Paper -->
-          <tr onmouseout="style_stop()" onmouseover="style_start()" >
-            <td width="25%">
-              <div class="one">
-              <div class="two" id = 'paruchuri2024odds'><img src='./papers/paruchuri2024odds.png' style='width:180px;height:100px;'></div>
-              <img src='./papers/paruchuri2024odds.png' style='width:128px;height:108px;'>
+                <li class="pub">
+                  <div class="idx">[1]</div>
+                  <div class="entry">
+                    <div class="authors">Yuzhe Yang, Yujia Liu, <strong>Xin Liu</strong>, Avanti Gulhane, Domenico Mastrodicasa, Wei Wu, Edward J. Wang, Dushyant W. Sahani, Shwetak Patel</div>
+                    <div class="title">Demographic Bias of Expert-Level Vision-Language Foundation Models in Medical Imaging</div>
+                    <div class="venue">Science Advances, 2024</div>
+                    <div class="links">
+                      <a href="https://www.science.org/doi/10.1126/sciadv.adq0305">Paper</a><a href="https://github.com/YyzHarry/vlm-fairness">Code</a>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </section>
+
+            <!-- ======================= Language Model Reasoning ======================= -->
+            <section class="section" id="large-language-model-reasoning">
+              <div class="section-header"><div class="section-title">Large Language Model Reasoning</div></div>
+              <ol class="publist">
+                <li class="pub">
+                  <div class="idx">[4]</div>
+                  <div class="entry">
+                    <div class="authors">Gheorghe Comanici, Eric Bieber, Mike Schaekermann, Ice Pasupat, Noveen Sachdeva, Inderjit Dhillon, Marcel Blistein, Ori Ram, Dan Zhang, Evan Rosen, ... <strong>Xin Liu</strong>, ...</div>
+                    <div class="title">Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities</div>
+                    <div class="venue">Tech Report, 2025</div>
+                    <div class="links">
+                      <a href="https://arxiv.org/abs/2508.20148">Paper</a><a href="https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/">Blog</a>
+                    </div>
+                    <div class="notes"><span class="note">Core contributor of tabular reasoning and data science reasoning.</span></div>
+                  </div>
+                </li>
+                <li class="pub">
+                  <div class="idx">[3]</div>
+                  <div class="entry">
+                    <div class="authors">Ken Gu, Zhihan Zhang, Kate Lin, Yuwei Zhang, Akshay Paruchuri, Hong Yu, Mehran Kazemi, Kumar Ayush, A Ali Heydari, Maxwell A Xu, Girish Narayanswamy, Yun Liu, Ming-Zher Poh, Yuzhe Yang, Mark Malhotra, Shwetak Patel, Hamid Palangi, Xuhai Xu, Daniel McDuff, Tim Althoff, <strong>Xin Liu</strong></div>
+                    <div class="title">RADAR: Benchmarking Language Models on Imperfect Tabular Data</div>
+                    <div class="venue">Under Review at NeurIPS, 2025</div>
+                    <div class="links">
+                      <a href="https://arxiv.org/abs/2506.08249">Paper</a><a href="https://github.com/kenqgu/RADAR">Code</a>
+                    </div>
+                    <div class="notes"><span class="note">Integrated in Gemini. Primary host of the first author.</span></div>
+                  </div>
+                </li>
+                <li class="pub">
+                  <div class="idx">[2]</div>
+                  <div class="entry">
+                    <div class="authors">Mehran Kazemi, Bahare Fatemi, Hritik Bansal, John Palowitch, Chrysovalantis Anastasiou, Sanket Vaibhav Mehta, Lalit K. Jain, Virginia Aglietti, Disha Jindal, Peter Chen, Nishanth Dikkala, Gladys Tyen, <strong>Xin Liu</strong>, Uri Shalit, Silvia Chiappa, Kate Olszewska, Yi Tay, Vinh Q. Tran, Quoc V. Le, Orhan Firat</div>
+                    <div class="title">Big-Bench Extra Hard</div>
+                    <div class="venue">ACL (Main), 2025</div>
+                    <div class="links">
+                      <a href="https://arxiv.org/abs/2502.19187">Paper</a><a href="https://github.com/google-deepmind/bbeh">Code</a>
+                    </div>
+                    <div class="notes"><span class="note">Integrated in Gemini. Core contributor of tabular reasoning.</span></div>
+                  </div>
+                </li>
+                <li class="pub">
+                  <div class="idx">[1]</div>
+                  <div class="entry">
+                    <div class="authors">Akshay Paruchuri, Jake Garrison, Shun Liao, John Hernandez, Jacob Sunshine, Tim Althoff, <strong>Xin Liu $</strong>, Daniel McDuff $</div>
+                    <div class="title">What Are the Odds? Language Models Are Capable of Probabilistic Reasoning</div>
+                    <div class="venue">EMNLP (Main), 2024</div>
+                    <div class="links">
+                      <a href="https://arxiv.org/abs/2406.12830">Paper</a><a href="https://github.com/yahskapar/LLMs-and-Probabilistic-Reasoning">Code</a><a href="https://research.google/pubs/what-are-the-odds-language-models-are-capable-of-probabilistic-reasoning/">Blog</a>
+                    </div>
+                    <div class="notes"><span class="note">$ Equal Leadership, Corresponding Author. Primary host of the first author.</span></div>
+                  </div>
+                </li>
+              </ol>
+            </section>
+
+            <!-- ======================= Machine Learning ======================= -->
+            <section class="section" id="machine-learning">
+              <div class="section-header"><div class="section-title">Machine Learning</div></div>
+              <ol class="publist">
+                <li class="pub">
+                  <div class="idx">[5]</div>
+                  <div class="entry">
+                    <div class="authors">Maxwell A. Xu #, Girish Narayanswamy #, Kumar Ayush, Dimitris Spathis, Shun Liao, Shyam A. Tailor, Ahmed Metwally, A. Ali Heydari, Yuwei Zhang, Jake Garrison, Samy Abdel-Ghaffar, Xuhai Xu, Ken Gu, Jacob Sunshine, Ming-Zher Poh, Yun Liu, Tim Althoff, Shrikanth Narayanan, Pushmeet Kohli, Mark Malhotra, Shwetak Patel, Yuzhe Yang, James M. Rehg, <strong>Xin Liu $</strong>, Daniel McDuff $</div>
+                    <div class="title">LSM-2: Learning from Incomplete Wearable Sensor Data</div>
+                    <div class="venue">Under Review at NeurIPS, 2025</div>
+                    <div class="links">
+                      <a href="https://arxiv.org/abs/2506.05321">Paper</a><a href="https://research.google/blog/lsm-2-learning-from-incomplete-wearable-sensor-data/">Blog</a>
+                    </div>
+                    <div class="notes"><span class="note">$ Equal Leadership, Corresponding Author</span><span class="note"># Equal Contribution, Co-host of the first authors.</span></div>
+                  </div>
+                </li>
+                <li class="pub">
+                  <div class="idx">[4]</div>
+                  <div class="entry">
+                    <div class="authors">Yuwei Zhang #, Kumar Ayush #, Siyuan Qiao, A. Ali Heydari, Girish Narayanswamy, Maxwell A. Xu, Ahmed A. Metwally, Shawn Xu, Jake Garrison, Xuhai Xu, Tim Althoff, Yun Liu, Pushmeet Kohli, Jiening Zhan, Mark Malhotra, Shwetak Patel, Cecilia Mascolo, <strong>Xin Liu</strong>, Daniel McDuff, Yuzhe Yang</div>
+                    <div class="title">SensorLM: Learning the Language of Wearable Sensors</div>
+                    <div class="venue">Under Review at NeurIPS, 2025</div>
+                    <div class="links">
+                      <a href="https://arxiv.org/abs/2506.09108">Paper</a><a href="https://research.google/blog/sensorlm-learning-the-language-of-wearable-sensors/">Blog</a>
+                    </div>
+                    <div class="notes"><span class="note">$ Co-senior Author, Core Contributor.</span></div>
+                  </div>
+                </li>
+                <li class="pub">
+                  <div class="idx">[3]</div>
+                  <div class="entry">
+                    <div class="authors">Girish Narayanswamy #, <strong>Xin Liu #$</strong>, Kumar Ayush, Yuzhe Yang, Xuhai Xu, Shun Liao, Jake Garrison, Shyam Tailor, Jake Sunshine, Yun Liu, Tim Althoff, Shrikanth Narayanan, Pushmeet Kohli, Jiening Zhan, Mark Malhotra, Shwetak Patel, Samy Abdel-Ghaffar, Daniel McDuff†$</div>
+                    <div class="title">Scaling Wearable Foundation Models</div>
+                    <div class="venue">ICLR, 2025</div>
+                    <div class="links">
+                      <a href="https://arxiv.org/abs/2410.13638">Paper</a><a href="https://research.google/blog/scaling-wearable-foundation-models/">Blog</a>
+                    </div>
+                    <div class="notes"><span class="note">$ Equal Leadership, Corresponding Author</span><span class="note"># Equal Contribution, Co-host of the first author.</span></div>
+                  </div>
+                </li>
+                <li class="pub">
+                  <div class="idx">[2]</div>
+                  <div class="entry">
+                    <div class="authors">Yuzhe Yang, <strong>Xin Liu</strong>, Jiang Wu, Silviu Borac, Dina Katabi, Ming-Zher Poh, Daniel McDuff</div>
+                    <div class="title">SimPer: Simple Self-Supervised Learning of Periodic Targets</div>
+                    <div class="venue">ICLR 2023</div>
+                    <div class="links">
+                      <a href="https://arxiv.org/abs/2210.03115">Paper</a><a href="https://github.com/YyzHarry">Code</a><a href="https://research.google/blog/simper-simple-self-supervised-learning-of-periodic-targets/">Blog</a>
+                    </div>
+                    <div class="notes"><span class="note">Oral, Notable Top 5% Submission</span></div>
+                  </div>
+                </li>
+                <li class="pub">
+                  <div class="idx">[1]</div>
+                  <div class="entry">
+                    <div class="authors"><strong>Xin Liu</strong>, Josh Fromm, Shwetak Patel, Daniel McDuff</div>
+                    <div class="title">Multi-Task Temporal Shift Attention Networks for On-Device Contactless Vitals Measurement</div>
+                    <div class="venue">NeurIPS 2020</div>
+                    <div class="links">
+                      <a href="https://arxiv.org/abs/2006.03790">Paper</a><a href="https://github.com/xliucs/MTTS-CAN">Code</a><a href="https://www.washington.edu/news/2021/04/01/smartphone-computer-cameras-measure-pulse-respiration-rate-telehealth/">Blog</a>
+                    </div>
+                    <div class="notes"><span class="note">Oral, Top 1%, 105 out of 9454 Submissions</span></div>
+                  </div>
+                </li>
+              </ol>
+            </section>
+
+          </main>
+        </body>
+            <!-- ======================= Misc ======================= -->
+            <section class="section" id="misc">
+              <div class="section-header">
+                <div class="section-title">Misc</div>
               </div>
-              <script type="text/javascript">
-              function style_start() {
-              document.getElementById('papers/paruchuri2024odds.png').style.opacity = "1";
-              }
-              function style_stop() {
-              document.getElementById('papers/paruchuri2024odds.png').style.opacity = "0";
-              }
-              style_stop()
-              </script>
-            </td>
-            <td valign="top" width="75%">
-            <papertitle> What Are the Odds? Language Models Are Capable of Probabilistic Reasoning </papertitle>
-          <br>
-          <u>Akshay Paruchuri</u>, Jake Garrison, Shun Liao, John Hernandez, Jacob Sunshine, Tim Althoff, <strong>Xin Liu</strong>, Daniel McDuff
- 	<br><em>EMNLP 2024 (Main)</em>
-           <br>
-          <br>
-              <a href="https://arxiv.org/pdf/2406.12830" target="_blank">pdf</a>
-              /
-              <a href="papers/paruchuri2024odds.bib">bibtex</a>
-            </td>
-          </tr>
-
-          <!-- PHLLM  Paper -->
-          <tr onmouseout="style_stop()" onmouseover="style_start()" >
-            <td width="25%">
-              <div class="one">
-              <div class="two" id = 'cosentino2024towards'><img src='./papers/cosentino2024towards.png' style='width:180px;height:100px;'></div>
-              <img src='./papers/cosentino2024towards.png' style='width:128px;height:108px;'>
-              </div>
-              <script type="text/javascript">
-              function style_start() {
-              document.getElementById('papers/cosentino2024towards.png').style.opacity = "1";
-              }
-              function style_stop() {
-              document.getElementById('papers/cosentino2024towards.png').style.opacity = "0";
-              }
-              style_stop()
-              </script>
-            </td>
-            <td valign="top" width="75%">
-            <papertitle> Towards a Personal Health Large Language Model </papertitle>
-          <br>
-          Justin Cosentino<strong>*</strong>, Anastasiya Belyaeva<strong>*‡</strong>, <strong>Xin Liu*‡</strong>, Nicholas A. Furlotte<strong>*</strong>, Zhun Yang, Chace Lee, Erik Schenck, Yojan Patel, Jian Cui, Logan Douglas Schneider, Robby Bryant, Ryan G. Gomes, Allen Jiang, Roy Lee, Yun Liu, Javier Perez, Jameson K. Rogers, Cathy Speed, Shyam Tailor, Megan Walker, Jeffrey Yu, Tim Althoff, Conor Heneghan, John Hernandez, Mark Malhotra, Leor Stern, Yossi Matias, Greg S. Corrado, Shwetak Patel, Shravya Shetty, Jiening Zhan, Shruthi Prabhakara, Daniel McDuff<strong>$‡</strong>, Cory Y. McLean<strong>$‡</strong>   
-          <br> <font color="black"><strong>* = co-first author, $ = equal advising, ‡ = corresponding author </strong></font><br>
-			<br><em>Nature Medicine</em>
-          <br>
-              <a href="https://arxiv.org/pdf/2406.06474" target="_blank">pdf</a>
-              /
-              <a href="papers/cosentino2024towards.bib">bibtex</a>
-              /
-              <a href="https://research.google/blog/advancing-personal-health-and-wellness-insights-with-ai/" target="_blank">Google Research Blog</a>
-            </td>
-          </tr>
-
-          <!-- PHIA  Paper -->
-          <tr onmouseout="style_stop()" onmouseover="style_start()" >
-            <td width="25%">
-              <div class="one">
-              <div class="two" id = 'merrill2024transforming'><img src='./papers/merrill2024transforming.png' style='width:210px;height:100px;'></div>
-              <img src='./papers/merrill2024transforming.png' style='width:128px;height:108px;'>
-              </div>
-              <script type="text/javascript">
-              function style_start() {
-              document.getElementById('papers/merrill2024transforming.png').style.opacity = "1";
-              }
-              function style_stop() {
-              document.getElementById('papers/merrill2024transforming.png').style.opacity = "0";
-              }
-              style_stop()
-              </script>
-            </td>
-            <td valign="top" width="75%">
-            <papertitle> Transforming Wearable Data into Health Insights using Large Language Model Agents </papertitle>
-          <br>
-          <u>Mike A. Merrill*</u>, <u>Akshay Paruchuri*</u>, Naghmeh Rezaei, Geza Kovacs, Javier Perez, Yun Liu, Erik Schenck, Nova Hammerquist, Jake Sunshine, Shyam Tailor, Kumar Ayush, Hao-Wei Su, Qian He, Cory Y. McLean, Mark Malhotra, Shwetak Patel, Jiening Zhan, Tim Althoff, Daniel McDuff, <strong>Xin Liu</strong>
-           <br><br> <em>Nature Communications (Under Minor Revision)</em>
-          <br>
-              <a href="https://arxiv.org/pdf/2406.06464" target="_blank">pdf</a>
-              /
-              <a href="papers/merrill2024transforming.bib">bibtex</a>
-              /
-              <a href="https://research.google/blog/advancing-personal-health-and-wellness-insights-with-ai/" target="_blank">Google Research Blog</a>
-            </td>
-          </tr>
-
-          <!-- rPPG Toolbox Paper -->
-          <tr onmouseout="style_stop()" onmouseover="style_start()" >
-            <td width="25%">
-              <div class="one">
-              <div class="two" id = 'liu2022rppg'><img src='./papers/liu2022rppg.png' style='width:210px;height:100px;'></div>
-              <img src='./papers/liu2022rppg.png' style='width:128px;height:108px;'>
-              </div>
-              <script type="text/javascript">
-              function style_start() {
-              document.getElementById('papers/liu2022rppg.png').style.opacity = "1";
-              }
-              function style_stop() {
-              document.getElementById('papers/liu2022rppg.png').style.opacity = "0";
-              }
-              style_stop()
-              </script>
-            </td>
-            <td valign="top" width="75%">
-                  <papertitle> rPPG-Toolbox: Deep Remote PPG Toolbox </papertitle>
-          <br>
-          <strong>Xin Liu</strong>, Girish Narayanswamy*, Akshay Paruchuri*, Xiaoyu Zhang, Jiankai Tang, Yuzhe Zhang, Roni Sengupta, Shwetak Patel, Yuntao Wang, Daniel McDuff <br>
-                <em>Conference on Neural Information Processing Systems (NeurIPS' 23 Datasets and Benchmarks Track) * denotes equal contribution</em><br>
-          <br>
-              <a href="https://arxiv.org/pdf/2210.00716.pdf" target="_blank">pdf</a>
-              /
-              <a href="papers/liu2022rppg.bib">bibtex</a>
-            </td>
-          </tr>
-
-          <!-- Health Learner -->
-          <tr onmouseout="style_stop()" onmouseover="style_start()" >
-            <td width="25%">
-              <div class="one">
-              <div class="two" id = 'liu2023large'><img src='./papers/liu2023large.png' style='width:210px;height:100px;'></div>
-              <img src='./papers/liu2023large.png' style='width:128px;height:108px;'>
-              </div>
-              <script type="text/javascript">
-              function style_start() {
-              document.getElementById('papers/liu2023large.png').style.opacity = "1";
-              }
-              function style_stop() {
-              document.getElementById('papers/liu2023large.png').style.opacity = "0";
-              }
-              style_stop()
-              </script>
-            </td>
-            <td valign="top" width="75%">
-                  <papertitle> Large Language Models are Few-Shot Health Learners </papertitle>
-          <br>
-          <strong>Xin Liu</strong>, Daniel McDuff, Geza Kovacs, Isaac Galatzer-Levy, Jacob Sunshine, Jiening Zhan, Ming-Zher Poh, Shun Liao, Paolo Di Achille, Shwetak Patel <br>
-                <em>White Paper, 2023</em><br>
-          <br>
-              <a href="https://arxiv.org/pdf/2305.15525.pdf" target="_blank">pdf</a>
-              /
-              <a href="papers/liu2023large.bib">bibtex</a>
-            </td>
-          </tr>
-
-          <!-- SimPer Paper -->
-          <tr onmouseout="style_stop()" onmouseover="style_start()" >
-            <td width="25%">
-              <div class="one">
-              <div class="two" id = 'yang2022simper'><img src='./papers/yang2022simper.png' style='width:210px;height:100px;'></div>
-              <img src='./papers/yang2022simper.png' style='width:128px;height:108px;'>
-              </div>
-              <script type="text/javascript">
-              function style_start() {
-              document.getElementById('papers/yang2022simper.png').style.opacity = "1";
-              }
-              function style_stop() {
-              document.getElementById('papers/yang2022simper.png').style.opacity = "0";
-              }
-              style_stop()
-              </script>
-            </td>
-            <td valign="top" width="75%">
-                  <papertitle> SimPer: Simple Self-Supervised Learning of Periodic Targets </papertitle>
-          <br>
-          Yuzhe Yang, <strong>Xin Liu</strong>, Jiang Wu, Silviu Borac, Dina Katabi, Ming-Zher Poh, Daniel McDuff <br>
-                <em>International Conference on Learning Representations (ICLR' 23)</em><br>
-                <em> <font color="red"><strong>Oral, Notable Top 5%, Review Ranked Top 5 among 4922 Submissions (Top 0.1%) </strong></font></em><br>
-
-          <br>
-              <a href="https://arxiv.org/pdf/2210.03115.pdf" target="_blank">pdf</a>
-              /
-              <a href="papers/yang2022simper.bib">bibtex</a>
-              /
-              <a href="https://research.google/blog/simper-simple-self-supervised-learning-of-periodic-targets/" target="_blank">Google Research Blog</a>
-            </td>
-          </tr>
-
-          <!-- 2022 globem IMWUT Paper -->
-          <tr onmouseout="style_stop()" onmouseover="style_start()" >
-            <td width="25%">
-              <div class="one">
-              <div class="two" id = 'xu2022imwut'><img src='./papers/xu2022imwut.png' style='width:210px;height:98px;'></div>
-              <img src='./papers/xu2022imwut.png' style='width:128px;height:108px;'>
-              </div>
-              <script type="text/javascript">
-              function style_start() {
-              document.getElementById('papers/xu2022imwut.png').style.opacity = "1";
-              }
-              function style_stop() {
-              document.getElementById('papers/xu2022imwut.png').style.opacity = "0";
-              }
-              style_stop()
-              </script>
-            </td>
-            <td valign="top" width="75%">
-                  <papertitle> GLOBEM: Cross-Dataset Generalization of Longitudinal Human Behavior Modeling </papertitle>
-          <br>
-                Xuhai Xu, <strong>Xin Liu</strong>, Han Zhang, Weichen Wang, Subigya Kumar Nepal,
-                Kevin S. Kuehn, Jeremy F Huckins, Margaret E Morris, Paula S. Nurius, Eve Ann Riskin,
-                Shwetak Patel, Tim Althoff, Andrew Campbell, Anind Dey, Jennifer Mankoff <br>
-                <em>Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT/Ubicomp 2023) </em>
-		<br><em> <font color="red"><strong>Distinguished Paper Award</strong></font></em><br>
-
-          <br>
-              <a href="" target="_blank">pdf</a>
-              /
-              <a href="papers/xu2022imwut.bib">bibtex</a>
-            </td>
-          </tr>
-
-
-          <!-- 2022 scamps Paper -->
-          <tr onmouseout="style_stop()" onmouseover="style_start()" >
-            <td width="25%">
-              <div class="one">
-              <div class="two" id = 'mcduff2022scamps'><img src='./papers/mcduff2022scamps.png' style='width:210px;height:98px;'></div>
-              <img src='./papers/mcduff2022scamps.png' style='width:128px;height:108px;'>
-              </div>
-              <script type="text/javascript">
-              function style_start() {
-              document.getElementById('papers/mcduff2022scamps.png').style.opacity = "1";
-              }
-              function style_stop() {
-              document.getElementById('papers/mcduff2022scamps.png').style.opacity = "0";
-              }
-              style_stop()
-              </script>
-            </td>
-            <td valign="top" width="75%">
-                  <papertitle> SCAMPS: Synthetics for Camera Measurement of Physiological Signals </papertitle>
-          <br>
-                <a>Daniel McDuff</a>,
-                <a>Miah Wander</a>,
-                <strong>Xin Liu</strong>,
-                <a>Brian Hill</a>,
-                <a>Javier Hernandez</a>,
-                <a>Jonathan Lester</a>,
-                <a>Tadas Baltrusaitis</a><br>
-                <em>Conference on Neural Information Processing Systems (NeurIPS' 22) </em>
-		<em> <font color="red"><strong>Oral, Top 1%</strong></font></em><br>
-
-          <br>
-              <a href="https://arxiv.org/pdf/2206.04197.pdf" target="_blank">pdf</a>
-              /
-              <a href="papers/mcduff2022scamps.bib">bibtex</a>
-            </td>
-          </tr>
-
-
-
-          <!-- EfficientPhys Paper -->
-          <tr onmouseout="style_stop()" onmouseover="style_start()" >
-            <td width="25%">
-              <div class="one">
-              <div class="two" id = 'liu2021efficientphys'><img src='./papers/liu2021efficientphys.png' style='width:210px;height:100px;'></div>
-              <img src='./papers/liu2021efficientphys.png' style='width:128px;height:108px;'>
-              </div>
-              <script type="text/javascript">
-              function style_start() {
-              document.getElementById('papers/liu2021efficientphys.png').style.opacity = "1";
-              }
-              function style_stop() {
-              document.getElementById('papers/liu2021efficientphys.png').style.opacity = "0";
-              }
-              style_stop()
-              </script>
-            </td>
-            <td valign="top" width="75%">
-                  <papertitle> Efficientphys: Enabling simple, fast and accurate camera-based vitals measurement </papertitle>
-          <br>
-                <strong>Xin Liu</strong>,
-                <a href="https://www.brianlhill.info/" target="_blank">Brian Hill</a>,
-                <a href="https://www.linkedin.com/in/jiangzh/" target="_blank">Ziheng Jiang</a>,
-                <a href="http://shwetak.com/" target="_blank">Shwetak Patel</a>,
-                <a href="https://www.microsoft.com/en-us/research/people/damcduff/" target="_blank">Daniel McDuff</a><br>
-                <em>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2023)</em>
-          <br>
-              <a href="https://arxiv.org/pdf/2110.04447.pdf" target="_blank">pdf</a>
-              /
-              <a href="papers/liu2021efficientphys.bib">bibtex</a>
-            </td>
-          </tr>
-
-
-
-
-          <!-- TBME Synthetic Paper -->
-          <tr onmouseout="style_stop()" onmouseover="style_start()" >
-            <td width="25%">
-              <div class="one">
-              <div class="two" id = 'mcduff2022using'><img src='./papers/mcduff2022using.png' style='width:210px;height:100px;'></div>
-              <img src='./papers/mcduff2022using.png' style='width:128px;height:108px;'>
-              </div>
-              <script type="text/javascript">
-              function style_start() {
-              document.getElementById('papers/mcduff2022using.png').style.opacity = "1";
-              }
-              function style_stop() {
-              document.getElementById('papers/mcduff2022using.png').style.opacity = "0";
-              }
-              style_stop()
-              </script>
-            </td>
-            <td valign="top" width="75%">
-                  <papertitle> Using High-Fidelity Avatars to Advance Camera-based Cardiac Pulse Measurement </papertitle>
-          <br>
-                <a href="https://www.microsoft.com/en-us/research/people/damcduff/" target="_blank">Daniel McDuff</a>,
-                <a href="https://www.microsoft.com/en-us/research/people/javierh/" target="_blank">Javier Hernandez</a>,
-                <strong>Xin Liu</strong>,
-                <a href="https://www.linkedin.com/in/josh-fromm-2a4a2258/" target="_blank">Josh Fromm</a>,
-                <a href="http://errollw.com/" target="_blank">Erroll Wood</a>,
-                <a href="https://www.linkedin.com/in/tadas-baltrusaitis-234b1234/?originalSubdomain=uk/" target="_blank">Tadas Baltrušaitis</a><br>
-                <em>IEEE Transactions on Biomedical Engineering (TBME 2022)</em>
-          <br>
-              <a href="https://ieeexplore.ieee.org/abstract/document/9714800" target="_blank" target="_blank">pdf</a>
-              /
-              <a href="papers/mcduff2022using.bib">bibtex</a>
-            </td>
-          </tr>
-
-          <!-- Ubicomp MobilePhys Paper -->
-          <tr onmouseout="style_stop()" onmouseover="style_start()" >
-            <td width="25%">
-              <div class="one">
-              <div class="two" id = 'liu2022mobilephys'><img src='./papers/liu2022mobilephys.png' style='width:210px;height:128px;'></div>
-              <img src='./papers/liu2022mobilephys.png' style='width:128px;height:108px;'>
-              </div>
-              <script type="text/javascript">
-              function style_start() {
-              document.getElementById('papers/liu2022mobilephys.png').style.opacity = "1";
-              }
-              function style_stop() {
-              document.getElementById('papers/liu2022mobilephys.png').style.opacity = "0";
-              }
-              style_stop()
-              </script>
-            </td>
-            <td valign="top" width="75%">
-                  <papertitle> MobilePhys: Personalized Mobile Camera-Based Contactless Physiological Sensing </papertitle>
-          <br>
-                <strong>Xin Liu</strong>,
-                <a href="https://pi.cs.tsinghua.edu.cn/lab/people/YuntaoWang/en/" target="_blank">Yuntao Wang</a>,
-                Sinan Xie,
-                Xiaoyu Zhang,
-                Zixian Ma,
-                <a href="https://www.microsoft.com/en-us/research/people/damcduff/" target="_blank">Daniel McDuff</a>,
-                <a href="http://shwetak.com/" target="_blank">Shwetak Patel</a><br>
-                <em>Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT/Ubicomp 2022)</em>
-
-          <br>
-              <a href="https://arxiv.org/pdf/2201.04039.pdf" target="_blank">pdf</a>
-              /
-              <a href="papers/liu2022mobilephys.bib">bibtex</a>
-            </td>
-          </tr>
-
-
-          <!-- CHIL' 21 MetaPhys paper -->
-          <tr onmouseout="style_stop()" onmouseover="style_start()" >
-            <td width="25%">
-              <div class="one">
-              <div class="two" id = 'liu2021metaphys'><img src='./papers/liu2021metaphys.png' style='width:210px;height:128px;'></div>
-              <img src='./papers/liu2021metaphys.png' style='width:191px;height:108px;'>
-              </div>
-              <script type="text/javascript">
-              function style_start() {
-              document.getElementById('papers/liu2021metaphys.png').style.opacity = "1";
-              }
-              function style_stop() {
-              document.getElementById('papers/liu2021metaphys.png').style.opacity = "0";
-              }
-              style_stop()
-              </script>
-            </td>
-            <td valign="top" width="75%">
-                  <papertitle>MetaPhys: Few-Shot Adaptation for Non-Contact Physiological Measurement</papertitle>
-          <br>
-                <strong>Xin Liu</strong>,
-                <a href="https://www.linkedin.com/in/jiangzh/" target="_blank">Ziheng Jiang</a>,
-                <a href="https://www.linkedin.com/in/josh-fromm-2a4a2258/" target="_blank">Josh Fromm</a>,
-                <a href="https://orsonxu.com/" target="_blank">Xuhai Xu</a>,
-                <a href="http://shwetak.com/" target="_blank">Shwetak Patel</a>,
-                <a href="https://www.microsoft.com/en-us/research/people/damcduff/" target="_blank">Daniel McDuff</a><br>
-                <em>ACM Conference on Health, Inference, and Learning (ACM-CHIL 2021)</em><br>
-                <font color="green"><strong>Selected Media:
-                <a href="https://spectrum.ieee.org/smartphone-camera-senses-patients-pulse-breathing-rate/" target="_blank">IEEE Spectrum </a>,
-                <a href="https://technews.acm.org/archives.cfm?fo=2021-04-apr/apr-02-2021.html/" target="_blank">ACM TechNews </a>,
-                <a href="https://www.geekwire.com/2021/researchers-develop-health-tech-tool-can-detect-vital-signs-persons-face-via-video/" target="_blank">GeekWire </a>,
-                <a href="https://www.washington.edu/news/2021/04/01/smartphone-computer-cameras-measure-pulse-respiration-rate-telehealth/" target="_blank">UW News</a>
-          <br>
-              <a href="https://dl.acm.org/doi/pdf/10.1145/3450439.3451870" target="_blank">pdf</a>
-              /
-              <a href="papers/liu2021metaphys.bib">bibtex</a>
-            </td>
-          </tr>
-
-          <!-- NeurIPS' 20 - MTTS-CAN -->
-          <tr onmouseout="style_stop()" onmouseover="style_start()" >
-            <td width="25%">
-              <div class="one">
-              <div class="two" id = 'liu2020multi'><img src='./papers/liu2020multi.png' style='width:210px;height:128px;'></div>
-              <img src='./papers/liu2020multi.png' style='width:191px;height:108px;'>
-              </div>
-              <script type="text/javascript">
-              function style_start() {
-              document.getElementById('papers/liu2020multi.png').style.opacity = "1";
-              }
-              function style_stop() {
-              document.getElementById('papers/liu2020multi.png').style.opacity = "0";
-              }
-              style_stop()
-              </script>
-            </td>
-            <td valign="top" width="75%">
-                  <papertitle>Multi-Task Temporal Shift Attention Networks for On-Device Contactless Vitals Measurement</papertitle>
-          <br>
-                <strong>Xin Liu</strong>,
-                <a href="https://www.linkedin.com/in/josh-fromm-2a4a2258/" target="_blank">Josh Fromm</a>,
-                <a href="http://shwetak.com/" target="_blank">Shwetak Patel</a>,
-                <a href="https://www.microsoft.com/en-us/research/people/damcduff/" target="_blank">Daniel McDuff</a><br>
-                <em>Conference on Neural Information Processing Systems (NeurIPS' 20)</em><br>
-                <em> <font color="red"><strong>Oral, Top 1%, 105 out of 9454 Submissions</strong></font></em><br>
-                <font color="green"><strong>Selected Media: <a href="https://note.microsoft.com/MSR-Webinar-Health-Sensing-Registration-On-Demand.html" target="_blank">Microsoft Research Webinar</a>,
-                <a href="https://www.microsoft.com/en-us/research/blog/utilizing-consumer-cameras-for-contact-free-physiological-measurement-in-telehealth-and-beyond/" target="_blank">Microsoft Research Blog</a>,
-                <a href="https://www.zdnet.com/article/microsoft-heres-how-your-smartphone-camera-plus-ai-can-keep-an-eye-on-your-health/#ftag=RSSbaffb68/" target="_blank">ZDNet</a>
-
-          <br>
-              <a href="https://proceedings.neurips.cc/paper/2020/file/e1228be46de6a0234ac22ded31417bc7-Paper.pdf" target="_blank">pdf</a>
-              /
-              <a href="papers/liu2020multi.bib">bibtex</a>
-            </td>
-          </tr>
-
-
-          <!-- Ubicomp SplitSR Paper -->
-          <tr onmouseout="style_stop()" onmouseover="style_start()" >
-            <td width="25%">
-              <div class="one">
-              <div class="two" id = 'liu2021splitsr'><img src='./papers/liu2021splitsr.png' style='width:210px;height:128px;'></div>
-              <img src='./papers/liu2021splitsr.png' style='width:191px;height:108px;'>
-              </div>
-              <script type="text/javascript">
-              function style_start() {
-              document.getElementById('papers/liu2021splitsr.png').style.opacity = "1";
-              }
-              function style_stop() {
-              document.getElementById('papers/liu2021splitsr.png').style.opacity = "0";
-              }
-              style_stop()
-              </script>
-            </td>
-            <td valign="top" width="75%">
-                  <papertitle>SplitSR: An End-to-End Approach to Super-Resolution on Mobile Devices</papertitle>
-          <br>
-                <strong>Xin Liu</strong>,
-                Yuang Li,
-                <a href="https://www.linkedin.com/in/josh-fromm-2a4a2258/" target="_blank">Josh Fromm</a>,
-                <a href="https://pi.cs.tsinghua.edu.cn/lab/people/YuntaoWang/en/" target="_blank">Yuntao Wang</a>,
-                <a href="https://www.linkedin.com/in/jiangzh/" target="_blank">Ziheng Jiang</a>,
-                <a href="https://mariakakis.github.io/" target="_blank">Alex Mariakakis</a>,
-                <a href="http://shwetak.com/" target="_blank">Shwetak Patel</a><br>
-                <em>Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT/Ubicomp 2021)</em>
-          <br>
-              <a href="https://ubicomplab.cs.washington.edu/pdfs/splitsr.pdf" target="_blank">pdf</a>
-              /
-              <a href="papers/liu2021splitsr.bib">bibtex</a>
-            </td>
-          </tr>
-
-
-          <!-- IEEE JBHI 2019 paper -->
-          <tr onmouseout="style_stop()" onmouseover="style_start()" >
-            <td width="25%">
-              <div class="one">
-              <div class="two" id = 'liu2018use'><img src='./papers/liu2018use.png' style='width:210px;height:128px;'></div>
-              <img src='./papers/liu2018use.png' style='width:161px;height:108px;'>
-              </div>
-              <script type="text/javascript">
-              function style_start() {
-              document.getElementById('papers/liu2018use.png').style.opacity = "1";
-              }
-              function style_stop() {
-              document.getElementById('papers/liu2018use.png').style.opacity = "0";
-              }
-              style_stop()
-              </script>
-            </td>
-            <td valign="top" width="75%">
-            <papertitle>The Use of A Finger-Worn Accelerometer for Monitoring of Hand Use in Ambulatory Settings</papertitle>
-      	  <br>
-      					<strong>Xin Liu</strong>,
-      					Smita Rajan,
-                Nathan Ramasarma,
-      					<a href="https://wyss.harvard.edu/team/associate-faculty/paolo-bonato/" target="_blank">Paolo Bonato</a> and
-      					<a href="http://ahhalab.org/" target="_blank">Sunghoon Ivan Lee</a> <br>
-                <em>IEEE Journal of Biomedical and Health Informatics (J-BHI 2019)</em><br>
-                <em> <font color="red"><strong>Cover Article Nominee</strong></font></em>
-          <br>
-              <a href="papers/liu2018use.pdf" target="_blank">pdf</a>
-              /
-              <a href="papers/liu2018use.bib">bibtex</a>
-            </td>
-          </tr>
-            </table>
-
-
-
-
-            <!-- Teaching Experience  -->
-
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr>
-              <td>
-              <heading>Teaching Experience</heading>
-              </td>
-            </tr>
-            </table>
-            <table width="100%" align="center" border="0" cellpadding="20">
-            <tr>
-              <td width="75%" valign="center">
-              <p>
-                Winter 2021/2022 - TECHIN 513: Managing Data and Signal Processing, Graduate Teaching Assistant
-                <br>
-                <br>
-                Fall 2017 - CS328: Mobile Health & Sensing, Undergraduate Course Assistant <br>
-                <em> <font color="red"><strong>Outstanding Course Assistant Award</strong></font></em>
-                <br>
-              </p>
-              </td>
-            </tr>
-            </table>
-
-            <!-- MISC  -->
-
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr>
-              <td>
-              <heading>Misc.</heading>
-              </td>
-            </tr>
-            </table>
-            <table width="100%" align="center" border="0" cellpadding="20">
-            <tr>
-              <td width="75%" valign="center">
-              <p>
-                During my undergraduate studies, I spent a huge amount of effort to push the international community to engage various leadership experiences at the university.  I was the first international peer mentor in the residential life office and the first international student consultant in the department of information and technology. I worked at six different departments during my undergrd years :p
-              </p>
+              <div class="entry">
                 <p>
-                During my free time, I enjoy snowboarding, climbing and playing tennis with my partner. I am also a big fan of NBA.
-              </p>
-              </td>
-            </tr>
-            </table>
-
+                  During my free time, I enjoy playing tennis, skiing, snowboarding, biking,
+                  and climbing with my partner. I have a cute cat called
+                  <a href="https://www.instagram.com/littlecutecooper/" target="_blank">Cooper</a>!
+                </p>
+              </div>
+            </section>
             <!-- Credits  -->
 
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
