@@ -12,7 +12,7 @@
       --ink: #111827;
       --muted: #4b5563;
       --card: #ffffff;
-      --bg: #f8fafc;
+      --bg: #ffffff;
       --border: #e5e7eb;
     }
 
@@ -42,12 +42,19 @@
     .subtitle { color: var(--muted); margin-bottom: 1.5rem; }
 
     .section {
-      background: var(--card);
+      background: #f9f9f9;
       border: 1px solid var(--border);
       border-radius: 16px;
       padding: 1.25rem 1.25rem 0.5rem;
       margin-bottom: 1rem;
       box-shadow: 0 1px 2px rgba(17,24,39,0.04);
+    }
+
+    .ig-link {
+      background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
     }
 
     .section-header { border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-bottom: 0.75rem; }
@@ -99,8 +106,8 @@
               </p>
               <p>Before joining UW, he obtained his bachelor’s degree in computer science from the <a href="https://cics.umass.edu/" target="_blank"> University of Massachusetts Amherst </a> in 2018, where he started his research with <a href="http://ahhalab.org/" target="_blank"> Sunghoon Ivan Lee </a>.
               </p>
-		<p> His work is at the intersection of AI for health and science, LLM reasoning, and machine learning. He is interested in building a unified AGI system that benefits for social good. </p> 
-				
+		<p> His work is at the intersection of AI for health and science, LLM reasoning, and machine learning. He is interested in building a unified AGI system that benefits for social good. </p>
+
 		<p>He leads the research and development of Google’s <a href="https://health.google/ai-models">frontier foundation models in personal health</a> including the Large Sensor Model (LSM), Personal Health Agent, Personal Health LLM (PH-LLM) and SensorLM.</p>
 
               <!-- <em> <font color="red"><strong>This website is currently under dvelopment!! Please come back later!</strong></font></em><br> -->
@@ -115,10 +122,24 @@
               </p>
 
 		  </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/xin_square.jpg" target="_blank"><img style="width:100%;max-width:100%" alt="profile photo" src="images/xin_circle.jpg" class="hoverZoomLink"></a>
-            </td>
-          </tr>
+      <td style="padding:2.5%; padding-top: 100px; width:30%; max-width:30%; vertical-align:top;">
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <a href="images/xin_square.jpg" target="_blank">
+            <img style="width:100%; max-width:180px; border-radius:50%;" alt="profile photo" src="images/xin_circle.jpg">
+          </a>
+        </div>
+
+        <div style="text-align: center;">
+          <a href="https://www.instagram.com/littlecutecooper/" target="_blank">
+            <img style="width:80%; max-width:120px; border-radius:50%;" alt="Cooper the cat" src="images/cooper.png">
+          </a>
+          <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--muted); line-height: 1.2;">
+            Follow his Instagram! <br>
+            <a href="https://www.instagram.com/littlecutecooper/" class="ig-link">@littlecutecooper</a>
+          </p>
+        </div>
+      </td>
+    </tr>
         </tbody></table>
 
         <body>
