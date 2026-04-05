@@ -3,7 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Xin Liu | Optimizing Intelligence for AGI </title>
+  <meta name="description" content="Xin Liu is a Senior Research Scientist at Google Research working on AI for health, LLM reasoning, and machine learning. PhD from University of Washington." />
+  <meta name="author" content="Xin Liu" />
+  <meta property="og:title" content="Xin Liu | Senior Research Scientist at Google Research" />
+  <meta property="og:description" content="AI for health, LLM reasoning, and machine learning researcher. Leading Google's frontier foundation models in personal health." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://xliucs.github.io/" />
+  <meta property="og:image" content="https://xliucs.github.io/images/xin_square.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@xliucs" />
+  <meta name="twitter:title" content="Xin Liu | Senior Research Scientist at Google Research" />
+  <meta name="twitter:description" content="AI for health, LLM reasoning, and machine learning researcher." />
+  <meta name="twitter:image" content="https://xliucs.github.io/images/xin_square.jpg" />
+  <link rel="canonical" href="https://xliucs.github.io/" />
+  <title>Xin Liu | Optimizing Intelligence for AGI</title>
   <style>
     :root {
       --darkblue: #0b3d91;
@@ -59,7 +72,7 @@
 
     .section-header { border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; margin-bottom: 0.75rem; }
 
-    .section-title { font-size: 1.1rem; font-weight: 700; text-decoration: underline; }
+    .section-title { font-size: 1.1rem; font-weight: 700; text-decoration: underline; margin: 0; }
 
     .publist { list-style: none; padding: 0; margin: 0; }
 
@@ -80,7 +93,15 @@
     /* .links a { margin-right: 0.6rem; color: var(--darkblue); text-decoration: none; font-weight: 600; }
     .links a:hover { text-decoration: underline; } */
     .links a {
-      margin-right: 0.6rem; /* space between links */
+      margin-right: 0.6rem;
+    }
+    .links a::after {
+      content: " / ";
+      color: var(--muted);
+      margin-left: 0.1rem;
+    }
+    .links a:last-child::after {
+      content: "";
     }
     .notes { margin-top: 0.35rem; }
     .note { display: inline-block; color: var(--accent-red); font-weight: 800; font-size: 0.92rem; margin-right: 0.5rem; }
@@ -88,15 +109,16 @@
     @media (max-width: 640px) {
       .pub { grid-template-columns: 2.25rem 1fr; }
       .idx { min-width: 2.25rem; }
+      .header-table td { display: block; width: 100% !important; text-align: center; padding: 1rem !important; }
     }
   </style>
 </head>
 
 <body>
-  <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <table class="header-table" style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table class="header-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center">
@@ -106,7 +128,7 @@
               </p>
               <p>Before joining UW, he obtained his bachelor’s degree in computer science from the <a href="https://cics.umass.edu/" target="_blank"> University of Massachusetts Amherst </a> in 2018, where he started his research with <a href="http://ahhalab.org/" target="_blank"> Sunghoon Ivan Lee </a>.
               </p>
-		<p> His work is at the intersection of AI for health and science, LLM reasoning, and machine learning. He is interested in building a unified AGI system that benefits for social good. </p>
+		<p> His work is at the intersection of AI for health and science, LLM reasoning, and machine learning. He is interested in building a unified AGI system that benefits social good. </p>
 
 		<p>He leads the research and development of Google’s <a href="https://health.google/ai-models">frontier foundation models in personal health</a> including the Large Sensor Model (LSM), Personal Health Agent, Personal Health LLM (PH-LLM) and SensorLM.</p>
 
@@ -115,10 +137,10 @@
                 <a href="mailto:xliu0@cs.washington.edu">Email</a> &nbsp/&nbsp
                 <a href="data/Xin_CV.pdf" target="_blank">CV</a> &nbsp/&nbsp
                 <a href="data/XinLiu-bio.txt" target="_blank">Bio</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?hl=en&user=p9F83HoAAAAJ" target="_blank">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://twitter.com/xliucs" target="_blank">Twitter</a> &nbsp/&nbsp
-                <a href="https://github.com/xliucs/" target="_blank">Github</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/xliucs/" target="_blank">Linkedin</a>
+                <a href="https://scholar.google.com/citations?hl=en&user=p9F83HoAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://twitter.com/xliucs" target="_blank" rel="noopener noreferrer">Twitter</a> &nbsp/&nbsp
+                <a href="https://github.com/xliucs/" target="_blank" rel="noopener noreferrer">Github</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/xliucs/" target="_blank" rel="noopener noreferrer">Linkedin</a>
               </p>
 
 		  </td>
@@ -131,7 +153,7 @@
 
         <div style="text-align: center;">
           <a href="https://www.instagram.com/littlecutecooper/" target="_blank">
-            <img style="width:80%; max-width:120px; border-radius:50%;" alt="Cooper the cat" src="images/cooper.jpg">
+            <img style="width:80%; max-width:120px; border-radius:50%;" alt="Cooper the cat" src="images/cooper.jpg" loading="lazy">
           </a>
           <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--muted); line-height: 1.2;">
             Follow Cooper's Instagram! <br>
@@ -142,14 +164,13 @@
     </tr>
         </tbody></table>
 
-        <body>
           <main class="container">
             <h1>Selected Publications</h1>
             <div class="subtitle">Venues in <span class="venue">dark blue</span>; paper titles in <span style="color: var(--title-blue); font-weight: 600;">blue</span>; roles/remarks in <span class="note">red</span>.</div>
 
             <!-- ======================= AI for Health ======================= -->
             <section class="section" id="ai-for-health">
-              <div class="section-header"><div class="section-title">AI for Health</div></div>
+              <div class="section-header"><h2 class="section-title">AI for Health</h2></div>
               <ol class="publist">
                 <li class="pub">
                   <div class="idx">[5]</div>
@@ -216,7 +237,7 @@
 
             <!-- ======================= Language Model Reasoning ======================= -->
             <section class="section" id="large-language-model-reasoning">
-              <div class="section-header"><div class="section-title">Large Language Model Reasoning</div></div>
+              <div class="section-header"><h2 class="section-title">Large Language Model Reasoning</h2></div>
               <ol class="publist">
                 <li class="pub">
                   <div class="idx">[5]</div>
@@ -282,7 +303,7 @@
 
             <!-- ======================= Machine Learning ======================= -->
             <section class="section" id="machine-learning">
-              <div class="section-header"><div class="section-title">Machine Learning</div></div>
+              <div class="section-header"><h2 class="section-title">Machine Learning</h2></div>
               <ol class="publist">
                 <li class="pub">
                   <div class="idx">[5]</div>
@@ -347,12 +368,10 @@
               </ol>
             </section>
 
-          </main>
-        </body>
             <!-- ======================= Misc ======================= -->
             <section class="section" id="misc">
               <div class="section-header">
-                <div class="section-title">Misc</div>
+                <h2 class="section-title">Misc</h2>
               </div>
               <div class="entry">
                 <p>
@@ -362,27 +381,18 @@
                 </p>
               </div>
             </section>
+
             <!-- Credits  -->
+            <footer style="text-align: right; padding: 1.25rem 0; font-size: 0.8rem; color: var(--muted);">
+              Website Credits to Jon Barron <a href="https://github.com/jonbarron/jonbarron_website" rel="noopener noreferrer" target="_blank"><strong>source code</strong></a> and Siddhartha Gairola <a href="https://github.com/sidgairo18/sidgairo18.github.io" rel="noopener noreferrer" target="_blank"><strong>source code</strong></a>
+              <br><br>
+              <a href="https://clustrmaps.com/site/1bof3" title="Visit tracker" rel="noopener noreferrer" target="_blank"><img src="https://clustrmaps.com/map_v2.png?d=_c7s3tBLJ_u7PFZGsisO1FwUwEDTW0z1Xx_0zRnk25U&cl=ffffff" alt="Visitor map" loading="lazy" /></a>
+            </footer>
 
-            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-            <tr>
-              <td>
-              <br>
-              <p align="right">
-                <font size="2">
-                Website Credits to Jon Barron <a href="https://github.com/jonbarron/jonbarron_website"><strong>source code</strong></a> and Siddhartha Gairola <a href="https://github.com/sidgairo18/sidgairo18.github.io"><strong>source code</strong></a>
-                <br>
-                <br>
-                <a href="https://clustrmaps.com/site/1bof3"  title="Visit tracker"><img src="https://clustrmaps.com/map_v2.png?d=_c7s3tBLJ_u7PFZGsisO1FwUwEDTW0z1Xx_0zRnk25U&cl=ffffff" /></a>
-      	  </font>
-              </p>
-              </td>
-            </tr>
-            </table>
-
+          </main>
 
           </td>
           </tr>
         </table>
-        </body>
-      </html>
+</body>
+</html>
