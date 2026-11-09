@@ -1,4 +1,4 @@
-Xin Liu is a Research Scientist at Google Consumer Health Research, focusing on the intersection of machine learning, 
+Xin Liu is a Research Lead and Staff Research Scientist at Google Health, focusing on the intersection of machine learning, 
 ubiquitous computing, and health. He has authored over 30 peer-reviewed papers in top venues across machine learning (NeurIPS, ICLR), 
 mobile and ubiquitous computing (CHI, Ubicomp), and biomedical engineering (TBME, JBHI). His work has been recognized 
 with the Google PhD Fellowship and the Best Paper Award at Ubicomp 2023. His research has also been featured in 4x oral 
